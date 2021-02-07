@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gasolinera</title>
+    <script type="text/javascript" src="scripts/script-repeticion-e1.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styleIndividual.css">	
+    <script src="https://kit.fontawesome.com/26a8ba9503.js" crossorigin="anonymous"></script>	
+</head>
+<header>
+	<h1>APLICACIONES INFORMÁTICAS I (HTML - CSS - JVASCRIPT)</h1>
+  	<h2>Gasolinera - repetición</h2>
+</header>
+<body>
+	<div class="navbar">
+        <a href="index.html">Inicio</a> 
+        <div class="dropdown">
+            <button class="dropbtn">Lineales 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index-lineales-e1.html">Grados - minutos - segundos</a>
+                <a href="index-lineales-e2.html">Altura de caída de un cuerpo</a>
+                <a href="index-lineales-e3.html">Sexto número de cinco cifras</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Alternativos 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index-alternativos-e1.html">Supermercado</a>
+                <a href="index-alternativos-e2.html">Hora al siguiente segundo</a>
+                <a href="index-alternativos-e3.html">Alquiler de vehículos</a>
+                <a href="index-alternativos-e4.html">Edad según fecha de nacimiento</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Repetición 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index-repeticion-e1.html">Gasolinera</a>
+                <a href="index-repeticion-e2.html">Conversor</a>
+                <a href="index-repeticion-e3.html">Cubos narcisistas</a>
+                <a href="index-repeticion-e4.html">Combinaciones de dos cifras</a>
+            </div>
+        </div>
+        <a href="index-VUI.html">Escritura por voz</a>
+        <a href="index-random.html">Juego de 7 afortunado</a> 
+      </div>
+	<form name="eGasolinera" id="Re1">
+		<section id="enunciado">
+			<h3>Enunciado.</h3>
+			<p>Este programa muestra información de un detector que acaba de ser instalado en una gasolinera para controlar la cantidad de litros de gasolina que va despachando el pistero. Se conoce que al comenzar el turo de trabajo en el tanque de gasolina hay N litros. 
+			Confeccione un programa para conocer constantemente.</p>
+			<ul>
+				<li>La cantidad de vehículos atendidos.</li>
+				<li>La cantidad de dinero recaudado si cada litro de gasolina especial  cuesta $1,25 ctvos. de dólar.</li>
+				<li>¿Cuál es la mayor cantidad de gasolina despachada a un vehículo?</li>
+			</ul>				
+		</section>	
+        <section id="rGrafica">
+			<h3>Gasolinera almacenada.</h3>
+            <label id="gdp"></label>
+			<meter id="gd" style="height: 50px;"></meter>
+		</section>
+
+		<section id="interfaz">
+			<h3>Ingreso de datos.</h3>
+            <label>Litros de gasolina inicial en gasolinera.</label>
+            <input type="number" id="gasolinera" value="0" min="0"onblur="GraficarGasolinera()"></input><br>
+            <label>Litros de gasolina compradas por vehículo.</label>
+            <input type="number" id="vehiculo" value="0" min="0"onblur="GraficarGasolinera()"></input><br>
+
+            <button type="button" onclick="ProcesarDatosGasolinera()">Calcular</button>
+			<button type="reset" onclick="Reiniciar()">Reestablecer</button>
+		</section>
+
+		<section id="resultado">
+			<h3>Resultados.</h3>
+            <label>Vehículos atendidos:</label>
+            <label id="r1"></label><br>
+            <label>Dinero recaudado:</label>
+            <label id="r2"></label><br>
+            <label>Mayor cantidad de gasolina despachada</label>
+            <label id="r3"></label>
+		</section>
+	</form>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Escritura por voz</title>
+	<link rel="stylesheet" href="styles/styleIndividual.css">		
+	<script src="https://kit.fontawesome.com/26a8ba9503.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/script-vui.js"></script>
+</head>
+<header>
+	<h1>APLICACIONES INFORMÁTICAS I</h1>
+	<h2>Escritura por voz</h2>
+</header>
+<body>
+	<div class="navbar">
+        <a href="index.html">Inicio</a> 
+        <div class="dropdown">
+            <button class="dropbtn">Lineales 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index-lineales-e1.html">Grados - minutos - segundos</a>
+                <a href="index-lineales-e2.html">Altura de caída de un cuerpo</a>
+                <a href="index-lineales-e3.html">Sexto número de cinco cifras</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Alternativos 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index-alternativos-e1.html">Supermercado</a>
+                <a href="index-alternativos-e2.html">Hora al siguiente segundo</a>
+                <a href="index-alternativos-e3.html">Alquiler de vehículos</a>
+                <a href="index-alternativos-e4.html">Edad según fecha de nacimiento</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Repetición 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index-repeticion-e1.html">Gasolinera</a>
+                <a href="index-repeticion-e2.html">Conversor</a>
+                <a href="index-repeticion-e3.html">Cubos narcisistas</a>
+                <a href="index-repeticion-e4.html">Combinaciones de dos cifras</a>
+            </div>
+        </div>
+        <a href="index-VUI.html">Escritura por voz</a>
+        <a href="index-random.html">Juego de 7 afortunado</a> 
+      </div>
+	<form name="VUI" id="vui">
+		<section id="enunciado">
+			<h3>Descripción.</h3>
+			<p>De clic en el botón <i class="fas fa-microphone-alt" style="color: #00ff99;"></i> para habilitar el micrófono (también debe permitir a su navegador el acceso al micrófono) y empiece a dictar el texto que desea que se escriba.<br>
+				De clic en el botón <i class="fas fa-microphone-alt-slash" style="color: #ff8080;"></i> para deshabilitar el micrófono. <br>
+				De clic en el botón <i class="fas fa-redo-alt" style="color: #346c9b;"></i> para borrar el texto escrito y dictar uno nuevo. 
+			</p>	
+			<p style="background-color: #b3ffb3; border-left: solid green; padding-left: 10px;"><b> Recomendación: </b>Usar el navegador Google Chrome, pues esta aplicacón no soporta algunos de los otros navegadores.</p>
+		</section>	
+
+		<section id="interfaz">
+			<h3>Opciones de dictado.</h3>		
+			<nav>
+				<center>
+					<button type="button" id="btnIcono1" title="Comenzar a dictar">
+						<i class="fas fa-microphone-alt fa-3x" style="color: #00ff99;"></i>
+				   </button>
+				   <button type="button" id="btnIcono2" title="Terminar de dictar">
+						<i class="fas fa-microphone-alt-slash fa-3x" style="color: #ff8080;"></i>
+				   </button>
+				   <button type="button" id="btnIcono3" title="Dictar nuevo texto">
+						<i class="fas fa-redo-alt fa-3x" style="color: #346c9b;"></i>
+				   </button>
+				</center>							
+			</nav>
+		</section>
+
+		<section id="resultado">
+			<h3>Texto dictado.</h3>
+			<p id="td"></p>	
+		</section>
+	</form>
+</body>
+</html>

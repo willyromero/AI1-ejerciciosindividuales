@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Edad según fecha de nacimiento</title>
+	<script type="text/javascript" src="scripts/script-alternativo-e4.js"></script>
+  	<link rel="stylesheet" type="text/css" href="styles/styleIndividual.css">	
+    <script src="https://kit.fontawesome.com/26a8ba9503.js" crossorigin="anonymous"></script>	
+</head>
+<header>
+	<h1>APLICACIONES INFORMÁTICAS I (HTML - CSS - JVASCRIPT)</h1>
+  	<h2>Edad de persona según fecha - alternativo</h2>
+</header>
+<body>
+	<div class="navbar">
+        <a href="index.html">Inicio</a> 
+        <div class="dropdown">
+            <button class="dropbtn">Lineales 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index-lineales-e1.html">Grados - minutos - segundos</a>
+                <a href="index-lineales-e2.html">Altura de caída de un cuerpo</a>
+                <a href="index-lineales-e3.html">Sexto número de cinco cifras</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Alternativos 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index-alternativos-e1.html">Supermercado</a>
+                <a href="index-alternativos-e2.html">Hora al siguiente segundo</a>
+                <a href="index-alternativos-e3.html">Alquiler de vehículos</a>
+                <a href="index-alternativos-e4.html">Edad según fecha de nacimiento</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Repetición 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index-repeticion-e1.html">Gasolinera</a>
+                <a href="index-repeticion-e2.html">Conversor</a>
+                <a href="index-repeticion-e3.html">Cubos narcisistas</a>
+                <a href="index-repeticion-e4.html">Combinaciones de dos cifras</a>
+            </div>
+        </div>
+        <a href="index-VUI.html">Escritura por voz</a>
+        <a href="index-random.html">Juego de 7 afortunado</a> 
+      </div>
+	<form>
+		<section id="enunciado">
+			<h3>Descripción.</h3>
+			<p>Este programa calcula la edad de una persona en base a su fecha de nacimiento.</p>
+		</section>	
+
+		<section id="rGrafica">
+			<h3>Ejemplo.</h3>
+			<center>
+				 <img src="images/alternativo-e4.png" alt="ejemplo del uso del programa">
+			</center>
+		</section>
+
+		<section id="interfaz">
+			<h3>Ingreso de datos.</h3>
+			<label>Eliga su fecha de nacimiento: </label>	
+			<input type="date" name="ddmmaa" id="fecha"><br>
+
+			<button type="button" onclick="DatosEdad()">Calcular</button>
+			<button type="reset" onclick="Reiniciar()">Reestablecer</button>
+		</section>
+
+		<section id="resultado">
+			<h3>Resultados.</h3>
+			<label id="edad"></label>
+		</section>
+	</form>
+</body>
+</html>

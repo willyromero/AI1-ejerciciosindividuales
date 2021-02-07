@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cubos narcicista</title>
+    <script type="text/javascript" src="scripts/script-repeticion-e3.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/styleIndividual.css">	
+    <script src="https://kit.fontawesome.com/26a8ba9503.js" crossorigin="anonymous"></script>	
+</head>
+<header>
+	<h1>APLICACIONES INFORMÁTICAS I (HTML - CSS - JVASCRIPT)</h1>
+  	<h2>Cubos narcicistas - repetición</h2>
+</header>
+<body>
+	<div class="navbar">
+        <a href="index.html">Inicio</a> 
+        <div class="dropdown">
+            <button class="dropbtn">Lineales 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index-lineales-e1.html">Grados - minutos - segundos</a>
+                <a href="index-lineales-e2.html">Altura de caída de un cuerpo</a>
+                <a href="index-lineales-e3.html">Sexto número de cinco cifras</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Alternativos 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index-alternativos-e1.html">Supermercado</a>
+                <a href="index-alternativos-e2.html">Hora al siguiente segundo</a>
+                <a href="index-alternativos-e3.html">Alquiler de vehículos</a>
+                <a href="index-alternativos-e4.html">Edad según fecha de nacimiento</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Repetición 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index-repeticion-e1.html">Gasolinera</a>
+                <a href="index-repeticion-e2.html">Conversor</a>
+                <a href="index-repeticion-e3.html">Cubos narcisistas</a>
+                <a href="index-repeticion-e4.html">Combinaciones de dos cifras</a>
+            </div>
+        </div>
+        <a href="index-VUI.html">Escritura por voz</a>
+        <a href="index-random.html">Juego de 7 afortunado</a> 
+      </div>
+	<form name="eGasolinera" id="Re1">
+		<section id="enunciado">
+			<h3>Descripción.</h3>
+			<p>Este programa calcula los cubos narcicistas en un rango de valores enteros. Los cubos narcisista son aquellos números enteros positivos que son exactamente iguales a la suma de sus dígitos elevados al cubo. <br> Por ejemplo: 370 = 3<sup>3</sup> + 7<sup>3</sup> + 0<sup>3</sup>.</p>
+		</section>	
+		
+		<section id="rGrafica">
+			<h3>Ejemplo.</h3>
+			<center>
+				 <img src="images/repeticion-e1.png" alt="ejemplo del uso del programa">
+			</center>
+		</section>
+
+		<section id="interfaz">
+			<h3>Ingreso de datos.</h3>
+			<p>Debe proporcionar el rango del cual desea conocer aquellos números que son cubos narcicistas.</p>
+			<label>Valor inicial</label>
+			<input type="number" id="vi" min="0" value="0" required placeholder="Valor inicial" title="Ingrese un número (inicio del rango)"><br>
+			<label>Valor final</label>
+			<input type="number" id="vf" min="0" value="0" required placeholder="Valor final" title="Ingrese un número (final del rango)"><br>
+			
+			<button type="button" onclick="EncontrarCubosNarcisistas()">Calcular</button>
+			<button type="reset" onclick="Reiniciar()">Reestablecer</button>
+		</section>
+
+		<section id="resultado">
+			<h3>Resultado.</h3>
+			<label>Números narcicistas: </label>
+			<label id="r1"></label><br>		
+		</section>
+	</form>
+</body>
+</html>
